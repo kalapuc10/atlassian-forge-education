@@ -1,0 +1,17 @@
+modules:
+  "jira:issuePanel":
+    - key: jira-checklist-hello-world-panel
+      function: main
+      title: Checklist
+      description: A simple checklist for Jira
+      icon: https://raw.githubusercontent.com/dpashkevich/forge-jira-checklist/master/src/images/checkbox.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/c3ce0a99-c927-4e71-bea0-eeaa2e758471
+  name: Atlassian Forge Education Plugin for Jira
+permissions:
+  scopes:
+    - "read:jira-work"
+    - "write:jira-work"
